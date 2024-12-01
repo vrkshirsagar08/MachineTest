@@ -26,6 +26,11 @@ public class Product {
 	    @JoinColumn(name = "category_id", nullable = false)
 	    private Category category;
 
+	    public Product() {
+	    	
+	    }
+
+
 	    public Long getId() {
 	        return id;
 	    }
@@ -58,11 +63,7 @@ public class Product {
 	        this.name = name;
 	        this.price = price;
 	    }
-	    @Override
-	    public String toString() {
-	        return "Product [id=" + id + ", name=" + name + ", price=" + price + ", category=" + category + "]";
-	    }
-	    
+	   
 	    
 
 }
